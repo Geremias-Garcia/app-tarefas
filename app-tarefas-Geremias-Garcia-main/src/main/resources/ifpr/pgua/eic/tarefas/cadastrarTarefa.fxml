@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.tarefas.controllers.CadastrarTarefa">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.77780151367188" minWidth="10.0" prefWidth="141.33334350585938" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="303.11106363932294" minWidth="10.0" prefWidth="269.5555928548177" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="177.99999999999994" minWidth="10.0" prefWidth="163.77774047851557" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="313.00002034505206" minHeight="10.0" prefHeight="82.40000228881836" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="313.00002034505206" minHeight="10.0" prefHeight="153.59999771118163" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="135.66664632161456" minHeight="4.11114501953125" prefHeight="135.66664632161456" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="72.888916015625" minHeight="10.0" prefHeight="37.333343505859375" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Button mnemonicParsing="false" onAction="#cadastrar" text="Cadastrar" />
+            <Button mnemonicParsing="false" onAction="#voltar" prefHeight="25.0" prefWidth="73.0" text="Voltar" />
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <ComboBox fx:id="cbCategorias" prefHeight="26.0" prefWidth="277.0" />
+            <TextField fx:id="tfTitulo" promptText="Titulo da tarefa" />
+            <TextField fx:id="tfDescricao" promptText="Descrição em no maximo 255 caracteres" />
+            <TextField fx:id="tfPrazo" promptText="Data no formato(ANO-MÊS-DIA)" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="16.0" GridPane.rowIndex="1">
+         <children>
+            <Label prefHeight="18.0" prefWidth="78.0" text="CATEGORIA:" />
+            <Label prefHeight="18.0" prefWidth="54.0" text="TITULO:" />
+            <Label prefHeight="18.0" prefWidth="77.0" text="DESCRIÇÃO:" />
+            <Label prefHeight="18.0" prefWidth="55.0" text="PRAZO:" />
+         </children>
+      </VBox>
+   </children>
+</GridPane>

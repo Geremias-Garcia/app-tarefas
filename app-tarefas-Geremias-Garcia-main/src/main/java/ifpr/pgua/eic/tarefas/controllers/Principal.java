@@ -5,19 +5,23 @@ import javafx.fxml.FXML;
 
 public class Principal {
     
-   
-}
-
-
-/*
- *
-public class Principal {
-    
-
     @FXML
-    private void cadastrarGenero(){
-        App.pushScreen("CADASTROGENERO");
+    private void cadastrarCategoria(){
+        App.pushScreen("CADASTROCATEGORIA");
     }
 
-    
- */
+    @FXML
+    private void listarCategorias(){
+        App.pushScreen("LISTARCATEGORIA");
+    }
+   
+    @FXML
+    private void cadastrarTarefa(){
+        App.pushScreen("CADASTROTAREFA");
+    }
+
+    @FXML
+    private void listarTarefa(){
+        App.pushScreen("LISTARTAREFA");
+    }
+}
